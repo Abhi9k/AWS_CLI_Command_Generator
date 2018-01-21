@@ -5,3 +5,7 @@ python aws_cli_manager.py [aws service name] [service command name] [valid json 
 
   For example:
   >python aws_cli_manager.py ec2 run-instances '{"image-id":"some image id","instance-type":"t2.small","dry-run":"","tag-specifications":[{"ResourceType":"instance","Tags":[{"Key":"Name","Value":"myserver"}]}]}'
+  
+  Output:
+  
+  **aws ec2 run-instances --tag-specifications 'ResourceType=instance,Tags=[{Value=myserver,Key=Name}]' --instance-type t2.small --dry-run  --image-id some image id**
