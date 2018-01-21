@@ -37,6 +37,10 @@ Converts a JSON string or a Python dictionary containing options of AWS CLI into
 2. Inside another script
 
     import aws_cli_manager.py as AWS_CLI_MANAGER
-    1. AWS_CLI_MANAGER.generate_aws_cli_command([aws service name],[service command name],[valid json string containing options])
+    1. >command = AWS_CLI_MANAGER.generate_aws_cli_command([aws service name],[service command name],[valid json string containing options])
+    
     or
-    2. AWS_CLI_MANAGER.generate_aws_cli_command([aws service name],[service command name], [python dictionary containing options]
+    
+    2. >command = AWS_CLI_MANAGER.generate_aws_cli_command([aws service name],[service command name], [python dictionary containing options]
+    
+    
